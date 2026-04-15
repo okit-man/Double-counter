@@ -1,6 +1,13 @@
 
 function counter (element, value) {
-    console.log(element, value);
+    // console.log(element, value);
+    this.elements = element;
+    this.values = value;
+    this.resetBtn = element.querySelector('.reset');
+    this.increaseBtn = element.querySelector(".increase");
+    this.decreaseBtn = element.querySelector(".decrease");
+    this.valueDOM = element.querySelector('.value');
+    this.valueDOM.textContent = this.values;
 };
 
 const firstCounter = new counter(getElement(".first-counter"), 100);
