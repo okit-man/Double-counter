@@ -32,7 +32,7 @@ function counter (element, value) {
 
 
 counter.prototype.increase = function () {
-    console.log(this)
+    // console.log(this)
     this.value++;
     this.valueDOM.textContent = this.value;
 }
